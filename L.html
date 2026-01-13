@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Login - LegLockers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: white;
+            color: black;
+        }
+
+        header {
+            padding: 20px 40px;
+            border-bottom: 2px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-home a {
+            text-decoration: none;
+            color: black;
+            font-weight: 900;
+            font-size: 28px;
+            letter-spacing: 3px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            padding: 40px;
+        }
+
+        .login-box {
+            border: 3px solid black;
+            border-radius: 16px;
+            padding: 50px 40px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .login-box h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        .login-box input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 14px;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .login-box button:hover {
+            background: white;
+            color: black;
+            border: 2px solid black;
+        }
+
+        .login-box .signup-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .login-box .signup-link a {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+
+        .login-box .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo-home">
+        <a href="index.html">LEGLOCKERS</a>
+    </div>
+    <nav>
+        <a href="R.html">Shop</a>
+        <a href="R.html">No-Gi</a>
+        <a href="G2.html">Gi</a>
+        <a href="AB.html">About</a>
+        <a href="L.html" class="nav-login">Login</a>
+        <a href="Su.html" class="nav-signup">Sign Up</a>
+    </nav>
+</header>
+
+<main>
+    <div class="login-box">
+        <h2>Login</h2>
+        <form action="login_process.aspx" method="post">
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="password" name="password" placeholder="Password" required />
+            <button type="submit">Login</button>
+        </form>
+        <div class="signup-link">
+            Don't have an account? <a href="Su.html">Sign Up</a>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
